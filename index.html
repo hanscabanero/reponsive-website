@@ -15,22 +15,15 @@
 
     <!-- Icon Library -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-        
+    
+    <!-- Boostrap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"></link>
+
+
 </head>
 <body>
-    <nav class="navigation">
-        <img src="" alt="Hans C">
-        <div class="dropdown">
-            <button class="dropbtn">
-                <i class="bi bi-list"></i>
-            </button>
-            <div class="dropdown-content">
-              <a href="#">About</a>
-              <a href="#">Portfolio</a>
-              <a href="#">Contact</a>
-            </div>
-          </div>
-    </nav>
     <main id="content">
         <div id="hero">
             <img src="" alt="background-img">
@@ -104,26 +97,47 @@
                             <p id="portfolio-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi eveniet sint expedita illo a ad. Velit sunt culpa doloribus quibusdam?</p>
                         </div>
                         </div>
+                        <div class="card">
+                            <img src="https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="preview-img">
+                            <div class="card-text">
+                                <div class="card-menu">
+                                    <h3 class="portfolio-title">Phone App</h3>
+                                    <div>
+                                        <button name="repo-link">   
+                                            <i class="bi bi-github card-btn"></i>
+                                            <a href=""></a>
+                                        </button>
+                                        <button name="live-web-link">
+                                            <i class="bi bi-box-arrow-up-right card-btn"></i>
+                                            <a href=""></a>
+                                        </button>
+                                    </div>
+                                </div>
+                                <p id="portfolio-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi eveniet sint expedita illo a ad. Velit sunt culpa doloribus quibusdam?</p>
+                            </div>
+                            </div>
         </div>
         <div id="contact">
             <h1 class="block-title">Contact Me</h1>
             <h3>Feel free to contact me if you think our work could be mutually beneficial!</h3>
-            <button name="github-link">
-                <img src="" alt="github">
+            <button class="contact-icon"  name="github-link">
+                <i class="bi bi-github card-btn"></i>
                 <a href=""></a>
             </button>
-            <button name="linkedin-link">
-                <img src="" alt="linkedin">
+            <button class="contact-icon"  name="linkedin-link">
+                <i class="bi bi-linkedin"></i>
                 <a href=""></a>
             </button>
-            <button name="X-link">
-                <img src="" alt="X">
+            <button class="contact-icon" name="X-link">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
+                    <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+                  </svg>
                 <a href=""></a>
             </button>
         </div>
-        <footer>
-            <p>Hans Cabanero The Odin Project All Rights Reserved ©</p>
-        </footer>
     </main>
+    <footer id="footer">
+        <p id="footer-text">Hans Cabanero The Odin Project All Rights Reserved ©</p>
+    </footer>
 </body>
 </html>
