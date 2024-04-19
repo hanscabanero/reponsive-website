@@ -6,15 +6,34 @@ button {
     background-color: #fff;
     height: 100%;
 }
+#hero{
+  background-color: #004c4c;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 #portfolio {
   display: grid;
-  grid-template-columns: repeat(4,1fr);
+  grid-template-columns: repeat(3,1fr);
   gap: 20px;
+  padding: 10px;
+}
+#scroll {
+  margin: 10px;
+  padding: 10px;
+  transform: scale(2);
+}
+#scroll:hover {
+  transform: scale(2.5);
+  transform-origin: center center;
+  transition: 200ms ease-in-out;
 }
 #portfolio > div {
   display: flex;
   justify-content: center;
   align-self: center;
+  margin: auto;
 }
 @media screen and (max-width: 500px){
   #portfolio {
@@ -29,7 +48,7 @@ button {
     align-self: center;
 }
 .card:hover {
-    transform: scale(1.01);
+    transform: scale(1.05);
     transform-origin: left top;
     transition: 200ms;
 }
@@ -71,7 +90,7 @@ button {
   background-color: #1a1a1a;
   color: white;
   padding: 20px;
-  
+
 }
 .contact-icon {
   background-color: #1a1a1a;
